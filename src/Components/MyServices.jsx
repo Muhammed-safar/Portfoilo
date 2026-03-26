@@ -28,15 +28,15 @@ const MyServices = () => {
   }
 ];
   return (
-    <div className="flex flex-col gap-5 px-4 md:px-0">
+    <div className="flex flex-col gap-5 px-4 md:px-0 mt-12 md:mt-20">
       <div className="flex">
-        <h1 className='text-3xl font-bold '>
+        <h1 className='text-3xl md:text-5xl font-bold'>
         My Services</h1></div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
        {services.map((service, i) => (
   <div
     key={i}
-    className="group flex flex-col gap-4 p-6 bg-white rounded-2xl h-[350px]  justify-center  hover:bg-black hover:text-lightbg shadow-md hover:-translate-y-2 hover:shadow-xl transition-all"
+    className="group flex flex-col gap-4 p-6 md:p-8 bg-white rounded-2xl h-[350px] justify-center hover:bg-black shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all"
   >
     <div className="flex justify-between items-center ">
       <img src={service.icon} alt={service.title} className="w-14 h-14 group-hover:brightness-0 group-hover:invert transition-all" />
@@ -45,8 +45,8 @@ const MyServices = () => {
       </span>
     </div>
 
-    <h2 className="text-2xl font-bold">{service.title}</h2>
-    <p className="">{service.description}</p>
+    <h2 className="text-2xl font-bold text-gray-900 group-hover:text-white transition-colors">{service.title}</h2>
+    <p className="text-gray-600 group-hover:text-gray-300 transition-colors">{service.description}</p>
   </div>
 ))}
       </div>

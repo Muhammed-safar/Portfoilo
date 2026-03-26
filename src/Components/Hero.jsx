@@ -1,10 +1,16 @@
 import React from 'react'
 import Skills from './Skills'
+import wavePattern from '../assets/wave-pattern.svg'
 
 const Hero = () => {
   return (
-    <div className='flex flex-col md:flex-row justify-between  h-screen w-full pt-5 md:pt-0 '>
-      <div className='flex flex-col  h-full w-full text-lightbg  md:justify-center  gap-4 md:gap-8'>
+    <div className='flex flex-col md:flex-row justify-between h-screen w-full pt-5 md:pt-0 relative'>
+      {/* Background Pattern */}
+      <div 
+        className="absolute top-0 bottom-0 left-[50%] -ml-[50vw] w-screen h-[130%] md:h-full pointer-events-none opacity-50 z-[-1]" 
+        style={{ backgroundImage: `url(${wavePattern})`, backgroundSize: 'cover', backgroundPosition: 'center' }} 
+      />
+      <div className='flex flex-col h-full w-full text-lightbg md:justify-center gap-4 md:gap-8'>
         <div className='flex '>
             <h2 className='md:text-3xl font-semibold font-sans'>
                 Hey, my name is
