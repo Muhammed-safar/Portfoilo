@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+
+  --color-primary: #093d34;
+  --color-accent: #F2C94C;
+  --color-lightbg: #F5F5F5;
+
+  --color-darktext: #1F2933;
+  --color-lighttext: #6B7280;
+
+}
+
+:root{
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
