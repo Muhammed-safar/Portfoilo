@@ -1,0 +1,17 @@
+<svg viewBox="0 0 1440 600" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" d="M0,350 C240,430 480,270 720,330 C960,390 1200,230 1440,310"></path>
+  <path fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" d="M0,370 C240,450 480,290 720,350 C960,410 1200,250 1440,330"></path>
+  <path fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" d="M0,390 C240,470 480,310 720,370 C960,430 1200,270 1440,350"></path>
+  <path fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" d="M0,410 C240,490 480,330 720,390 C960,450 1200,290 1440,370"></path>
+  <path fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" d="M0,430 C240,510 480,350 720,410 C960,470 1200,310 1440,390"></path>
+  <path fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" d="M0,450 C240,530 480,370 720,430 C960,490 1200,330 1440,410"></path>
+  <path fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" d="M0,470 C240,550 480,390 720,450 C960,510 1200,350 1440,430"></path>
+  <path fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" d="M0,490 C240,570 480,410 720,470 C960,530 1200,370 1440,450"></path>
+
+  <path fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1.5" d="M0,360 C240,440 480,280 720,340 C960,400 1200,240 1440,320"></path>
+  <path fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1.5" d="M0,380 C240,460 480,300 720,360 C960,420 1200,260 1440,340"></path>
+  <path fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1.5" d="M0,400 C240,480 480,320 720,380 C960,440 1200,280 1440,360"></path>
+  <path fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1.5" d="M0,420 C240,500 480,340 720,400 C960,460 1200,300 1440,380"></path>
+  <path fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1.5" d="M0,440 C240,520 480,360 720,420 C960,480 1200,320 1440,400"></path>
+  <path fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1.5" d="M0,460 C240,540 480,380 720,440 C960,500 1200,340 1440,420"></path>
+</svg>

@@ -10,13 +10,16 @@ const Hero = () => {
                 Hey, my name is
             </h2>
         </div>
-        <div className='flex gap-1 md:flex-col'>
-            <h1 className='text-3xl md:text-6xl font-bold'>
+        <div className='flex gap-1 md:flex-col relative w-fit'>
+            <h1 className='text-3xl md:text-6xl font-bold relative z-10'>
                 MUHAMMED 
             </h1>
-            <h1 className='text-3xl md:text-6xl font-bold'>
+            <h1 className='text-3xl md:text-6xl font-bold relative z-10'>
                  SAFAR N.P
             </h1>
+            <svg className="absolute -bottom-2 md:-bottom-4 left-0 w-[110%] h-4 md:h-6 text-[#ffcc00] z-0" viewBox="0 0 200 20" preserveAspectRatio="none">
+               <path fill="none" stroke="currentColor" strokeWidth="8" strokeLinecap="round" d="M 5,15 Q 50,5 100,10 T 195,15"></path>
+            </svg>
         </div>
         <div className='flex'></div>
         <div className='flex text-2xl font-semibold font-sans text-[#dddcdc]'>FULL STACK DEVELOPER</div>
