@@ -18,25 +18,21 @@ const Layout = () => {
         </div>
 
       </div>
-      <div data-aos="fade-up" className='flex flex-col max-w-7xl  w-full mx-auto  p-4 md:p-0 '>
+      <div data-aos="fade-up" className='flex flex-col max-w-7xl w-full mx-auto p-4 md:p-0 mt-12'>
         <Skills />
       </div>
-      <div data-aos="fade-up" className='flex flex-col max-w-7xl  w-full mx-auto  p-4 md:p-0 md:mt-10 '>
+      <div data-aos="fade-up" className='flex flex-col max-w-7xl w-full mx-auto p-4 md:p-0 mt-12 md:mt-16'>
         <LatestProjects />
       </div>
-      <div data-aos="fade-up" className='flex  max-w-7xl  w-full mx-auto  p-4 md:p-0 md:mt-15 '>
+      <div data-aos="fade-up" className='flex max-w-7xl w-full mx-auto p-4 md:p-0 mt-12 md:mt-16'>
         <Experience />
       </div>
-      <div data-aos="fade-up" className='flex  max-w-7xl  w-full mx-auto  p-4 md:p-0 md:mt-15 '>
+      <div data-aos="fade-up" className='flex max-w-7xl w-full mx-auto p-4 md:p-0 mt-12 md:mt-16'>
         <MyServices />
       </div>
-      <div data-aos="fade-up" className='flex flex-col w-full mt-10 md:mt-20'>
+      <div data-aos="fade-up" className='flex flex-col w-full mt-12 md:mt-24'>
         <ContactBanner />
-
-      </div>
-      <div data-aos="fade-up" className='flex flex-col w-full mt-10 md:mt-20'>
         <Footer />
-
       </div>
     </div>
   )

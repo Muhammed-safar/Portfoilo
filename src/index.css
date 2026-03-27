@@ -18,10 +18,13 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+* {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
 }
 
-html::-webkit-scrollbar {
-  display: none; /* Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none !important; /* Chrome, Safari and Opera */
 }
