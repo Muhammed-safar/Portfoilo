@@ -2,7 +2,7 @@ import React from 'react'
 import wavePattern from '../assets/wave-pattern.svg'
 import { FiArrowRight } from 'react-icons/fi'
 
-const Hero = () => {
+const Hero = ({ onOpenProjects }) => {
   return (
     <div className='relative flex flex-col md:flex-row items-center justify-between min-h-[calc(100vh-96px)] w-full py-10 md:py-0 overflow-visible'>
       
@@ -18,13 +18,13 @@ const Hero = () => {
       />
 
       {/* Left Content: Text & CTA */}
-      <div className='relative z-10 flex flex-col w-full md:w-5/12 gap-6' data-aos="fade-right">
+      <div className='relative z-10 flex flex-col w-full md:w-6/12 gap-6' data-aos="fade-right">
         <div className='space-y-2'>
-          <h2 className='text-accent font-medium tracking-wider uppercase text-sm md:text-base animate-pulse'>
-            Available for Freelance
+          <h2 className='text-accent font-medium tracking-widest uppercase text-sm md:text-base animate-pulse'>
+            Full Stack Developer
           </h2>
           <div className='relative w-fit'>
-            <h1 className='text-4xl md:text-7xl font-bold text-lightbg leading-tight'>
+            <h1 className='text-4xl md:text-7xl font-black text-lightbg leading-tight tracking-tight'>
               MUHAMMED <br />
               <span className='text-accent'>SAFAR N.P</span>
             </h1>
@@ -34,64 +34,54 @@ const Hero = () => {
           </div>
         </div>
         
-        <p className='text-lg md:text-xl text-lightbg/80 font-light max-w-md'>
-          A passionate <span className='text-lightbg font-semibold'>Full Stack Developer</span> crafting high-performance, beautiful web experiences with modern technologies.
+        <p className='text-lg md:text-xl text-lightbg/80 font-light max-w-md leading-relaxed'>
+          Crafting high-performance, beautiful web experiences with modern technologies. 
+          Specializing in <span className='text-lightbg font-semibold'>MERN stack.</span>
         </p>
 
         <div className='flex flex-wrap gap-4 pt-4'>
-          <button className='px-8 py-4 bg-accent text-primary font-bold rounded-full hover:scale-105 transition-transform flex items-center gap-2 group shadow-[0_0_20px_rgba(242,201,76,0.3)]'>
+          <button 
+            onClick={onOpenProjects}
+            className='px-8 py-4 bg-accent text-primary font-bold rounded-full hover:scale-105 transition-all flex items-center gap-2 group shadow-[0_0_20px_rgba(242,201,76,0.3)]'
+          >
             View My Work
             <FiArrowRight className='group-hover:translate-x-1 transition-transform' />
           </button>
         </div>
       </div>
 
-      {/* Center Content: Portrait Placeholder with Decorative Elements */}
-      <div className='relative z-10 flex justify-center items-center w-full md:w-auto my-12 md:my-0' data-aos="zoom-in">
-        {/* Glow Effect */}
-        <div className='absolute w-64 h-64 md:w-96 md:h-96 bg-accent/20 rounded-full blur-[80px] z-0 animate-glow-pulse' />
+      {/* Right Content: Modern 3D Photo Placeholder */}
+      <div className='relative z-10 flex justify-center items-center w-full md:w-5/12 my-12 md:my-0' 
+           style={{ perspective: '1000px' }}
+           data-aos="fade-left">
         
-        {/* Main Image Container */}
-        <div className='relative w-[280px] h-[380px] md:w-[400px] md:h-[520px] rounded-[40px] md:rounded-[60px] border border-lightbg/10 overflow-hidden backdrop-blur-sm bg-lightbg/5 shadow-2xl animate-float'>
-          <div className='absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent z-10' />
-          {/* This would be the user's image */}
-          <div className='absolute inset-0 flex items-center justify-center text-lightbg/20 text-9xl font-bold select-none'>
-            MS
-          </div>
+        {/* The "Future Photo" Frame with 3D Tilt */}
+        <div className='relative w-[220px] h-[300px] md:w-[300px] md:h-[400px] rounded-[3rem] border-2 border-dashed border-accent/20 flex flex-col items-center justify-center bg-lightbg/5 backdrop-blur-md overflow-hidden group hover:border-accent/40 transition-all duration-700 shadow-2xl animate-[float_6s_ease-in-out_infinite]'
+             style={{ transform: 'rotateY(-15deg) rotateX(10deg)' }}>
           
-          {/* Experience Badge */}
-          <div className='absolute bottom-8 left-8 z-20 bg-accent/90 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-white/20' data-aos="fade-up" data-aos-delay="400">
-            <h4 className='text-primary text-3xl font-bold'>1+</h4>
-            <p className='text-primary/80 text-xs font-semibold uppercase tracking-wider'>Years Experience</p>
+          {/* Decorative Corner Accents */}
+          <div className='absolute top-6 left-6 w-8 h-8 border-t-2 border-l-2 border-accent/30' />
+          <div className='absolute bottom-6 right-6 w-8 h-8 border-b-2 border-r-2 border-accent/30' />
+          
+          {/* Placeholder Text */}
+          <div className='text-center p-6 space-y-3 group-hover:scale-105 transition-transform duration-500'>
+            <div className='w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-2'>
+              <FiArrowRight className='text-accent -rotate-45' size={24} />
+            </div>
+            <p className='text-accent/60 font-bold uppercase tracking-widest text-[10px]'>Portrait Area</p>
+            <p className='text-lightbg/30 text-xs'>3D Space for <br /> your photo</p>
           </div>
+
+          {/* Floating Glow on Hover */}
+          <div className='absolute inset-0 bg-gradient-to-tr from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500' />
         </div>
 
-        {/* Decorative Floating Elements */}
-        <div className='absolute -top-6 -right-6 w-20 h-20 bg-accent rounded-full opacity-20 blur-xl animate-glow-pulse' />
-        <div className='absolute -bottom-10 -left-10 w-32 h-32 border border-accent/30 rounded-full animate-float-slow' />
-      </div>
-
-      {/* Right Content: Stats Grid */}
-      <div className='relative z-10 flex flex-col gap-6 md:gap-10 w-full md:w-auto' data-aos="fade-left">
-        <StatCard value="10+" label="Projects Done" />
-        <StatCard value="5+" label="Happy Clients" />
-        <StatCard value="24/7" label="Support" />
+        {/* Glow Effect behind the frame */}
+        <div className='absolute w-48 h-48 md:w-80 md:h-80 bg-accent/10 rounded-full blur-[100px] z-[-1] animate-glow-pulse' />
       </div>
 
     </div>
   )
 }
-
-const StatCard = ({ value, label }) => (
-  <div className='group flex flex-col md:items-end gap-1'>
-    <h3 className='text-4xl md:text-5xl font-bold text-lightbg group-hover:text-accent transition-colors duration-300'>
-      {value}
-    </h3>
-    <p className='text-sm md:text-base font-medium text-lightbg/60 uppercase tracking-widest'>
-      {label}
-    </p>
-    <div className='w-12 h-1 bg-accent/30 rounded-full md:ml-auto group-hover:w-20 group-hover:bg-accent transition-all duration-300' />
-  </div>
-)
 
 export default Hero

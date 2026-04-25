@@ -5,7 +5,7 @@ const ContactBanner = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="flex w-full bg-[#f4f9f9] py-16 md:py-24 overflow-hidden relative justify-center">
+    <div id="contacts" className="flex w-full bg-[#f4f9f9] py-16 md:py-24 overflow-hidden relative justify-center">
       <div className="flex flex-col md:flex-row items-center justify-center max-w-6xl w-full mx-auto relative z-10 px-4 md:px-0">
         
         {/* Left White Circle */}
@@ -25,9 +25,9 @@ const ContactBanner = () => {
         {/* Right Yellow Circle */}
         <div className="relative z-0 bg-accent rounded-full w-[300px] h-[300px] md:w-[450px] md:h-[450px] flex-shrink-0 flex items-center justify-center translate-y-8 md:translate-y-16 animate-float-slow overflow-hidden shadow-[inset_0_0_50px_rgba(255,255,255,0.3)]" data-aos="zoom-in" data-aos-delay="200">
            {/* Smooth Minimal Dot Pattern */}
-           <div className="absolute inset-0 opacity-[0.2] pointer-events-none"
+           <div className="absolute inset-0 opacity-[0.3] pointer-events-none"
                 style={{
-                  backgroundImage: `radial-gradient(white 1.5px, transparent 1.5px)`,
+                  backgroundImage: `radial-gradient(white 2px, transparent 2px)`,
                   backgroundSize: '24px 24px'
                 }}
            />

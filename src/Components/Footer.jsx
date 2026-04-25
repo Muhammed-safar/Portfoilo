@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className="w-full bg-[#f4f9f9] pt-10 pb-8 flex flex-col items-center">
+    <div className="w-full bg-[#f4f9f9] pt-10 pb-4 flex flex-col items-center">
       {/* Center Logo */}
       <div className="flex items-center gap-2 mb-24 md:mb-32 mt-4 md:mt-12">
         <div className="flex text-2xl font-extrabold text-[#0d6d62] h-8 w-8 border-4 border-[#0d6d62] justify-center items-center">
@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Row */}
-      <div className="w-full max-w-[1400px] mx-auto px-4 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
+      <div className="w-full max-w-6xl mx-auto px-4 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
         {/* Copyright */}
         <div className="text-gray-500 text-sm font-medium">
           © 2025 - Blocksy Theme

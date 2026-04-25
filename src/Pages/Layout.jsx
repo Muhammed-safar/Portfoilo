@@ -7,39 +7,44 @@ import Experience from '../Components/Experience'
 import MyServices from '../Components/MyServices'
 import ContactBanner from '../Components/ContactBanner'
 import Footer from '../Components/Footer'
+import ProjectsModal from '../Components/ProjectsModal'
 
 const Layout = () => {
+  const [isProjectsModalOpen, setIsProjectsModalOpen] = React.useState(false);
+
   return (
     <div className='flex flex-col w-full overflow-x-hidden [font-family:var(--font-heading)]'>
-      <div className='flex bg-primary w-full md:h-[670px] px-4 md:px-12 relative'>
-        <div className='flex md:max-w-7xl flex-col w-full mx-auto '>
-          <Navbar />
-          <Hero />
+      <div className='flex bg-primary w-full px-4 md:px-12'>
+        <div className='flex max-w-6xl flex-col w-full mx-auto'>
+          <Navbar onOpenProjects={() => setIsProjectsModalOpen(true)} />
+          <Hero onOpenProjects={() => setIsProjectsModalOpen(true)} />
         </div>
       </div>
       
-      <div data-aos="fade-up" className='flex flex-col max-w-7xl w-full mx-auto px-4 md:px-12 mt-12'>
+      <div data-aos="fade-up" className='flex flex-col max-w-6xl w-full mx-auto px-4 md:px-12 py-8 md:py-12'>
         <Skills />
       </div>
       
-      <div data-aos="fade-up" className='flex flex-col max-w-7xl w-full mx-auto px-4 md:px-12 mt-12 md:mt-16'>
+      <div data-aos="fade-up" className='flex flex-col max-w-6xl w-full mx-auto px-4 md:px-12 py-8 md:py-12'>
         <LatestProjects />
       </div>
       
-      <div data-aos="fade-up" className='flex max-w-7xl w-full mx-auto px-4 md:px-12 mt-12 md:mt-16'>
+      <div data-aos="fade-up" className='flex max-w-6xl w-full mx-auto px-4 md:px-12 py-8 md:py-12'>
         <Experience />
       </div>
       
-      <div data-aos="fade-up" className='flex max-w-7xl w-full mx-auto px-4 md:px-12 mt-12 md:mt-16'>
+      <div data-aos="fade-up" className='flex max-w-6xl w-full mx-auto px-4 md:px-12 py-8 md:py-12'>
         <MyServices />
       </div>
       
-      <div data-aos="fade-up" className='flex flex-col w-full mt-12 md:mt-24 px-4 md:px-12'>
-        <div className='max-w-7xl w-full mx-auto'>
-          <ContactBanner />
-          <Footer />
-        </div>
+      <div data-aos="fade-up" className='flex flex-col w-full'>
+        <ContactBanner />
+        <Footer />
       </div>
+      <ProjectsModal 
+        isOpen={isProjectsModalOpen} 
+        onClose={() => setIsProjectsModalOpen(false)} 
+      />
     </div>
   )
 }

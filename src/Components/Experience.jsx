@@ -20,7 +20,7 @@ const Experience = () => {
   ];
 
   return (
-    <section className="py-20 w-full">
+    <section id="about" className="py-20 w-full">
       <div className="flex flex-col items-center mb-16" data-aos="fade-up">
         <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 uppercase tracking-tight text-center">
           Education <span className="text-accent">&</span> Experience
@@ -36,10 +36,18 @@ const Experience = () => {
           <div
             key={index}
             data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
-            className={`group relative flex flex-col gap-6 p-10 bg-white rounded-[2rem] border border-gray-100 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(9,61,52,0.1)] hover:border-accent/30 z-10`}
+            className={`group relative flex flex-col gap-6 p-10 bg-white rounded-[2rem] border border-gray-100 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(9,61,52,0.1)] hover:border-accent/30 z-10 overflow-hidden`}
           >
+            {/* Blueprint Grid Pattern Overlay */}
+            <div className="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity duration-500 pointer-events-none z-0"
+                 style={{
+                   backgroundImage: `linear-gradient(var(--color-accent) 1px, transparent 1px), linear-gradient(90deg, var(--color-accent) 1px, transparent 1px)`,
+                   backgroundSize: '24px 24px'
+                 }}
+            />
+
             {/* Header: Icon and Year */}
-            <div className="flex justify-between items-start">
+            <div className="relative z-10 flex justify-between items-start">
               <div className="p-4 bg-primary/5 rounded-2xl text-primary text-3xl group-hover:bg-primary group-hover:text-white transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-6">
                 {item.icon}
               </div>
