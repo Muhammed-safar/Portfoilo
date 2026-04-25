@@ -14,7 +14,7 @@ const Layout = () => {
 
   return (
     <div className='flex flex-col w-full overflow-x-hidden [font-family:var(--font-heading)]'>
-      <div className='flex bg-primary w-full px-4 md:px-12'>
+      <div className='flex bg-gradient-to-b from-primary via-primary via-80% to-white w-full px-4 md:px-12'>
         <div className='flex max-w-6xl flex-col w-full mx-auto'>
           <Navbar onOpenProjects={() => setIsProjectsModalOpen(true)} />
           <Hero onOpenProjects={() => setIsProjectsModalOpen(true)} />
